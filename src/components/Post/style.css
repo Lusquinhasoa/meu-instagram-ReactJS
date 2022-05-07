@@ -1,6 +1,7 @@
-header{
+.header-post{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 10px 15px;
 }
 .infos-post{
@@ -8,7 +9,7 @@ header{
     align-items: center;
     gap: 16px;
 }
-header img{
+.header-post .img-header-post{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -16,4 +17,55 @@ header img{
 .img-post img{
     width: 100%;
     object-fit: cover;
+}
+.footer-post{
+    padding: 10px 15px;
+}
+.engagement-post{
+    display: flex;
+    justify-content: space-between;
+}
+.engagement-post .icons1{
+    display: flex;
+    gap: 16px;
+}
+.icon{
+    cursor: pointer;
+}
+.likes{
+    margin-top: 6px;
+}
+.likes span{
+    font-size: 15px;
+    font-weight: 500;
+}
+.legend{
+    margin: 6px 0 3px;
+}
+.legend p span{
+    font-weight: 500;
+}
+.clock time{
+    font-size: 11px;
+    color: var(--secondary);
+}
+.fake-comment{
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    flex: 1;
+    gap: 16px;
+}
+.fake-comment input{
+    font-size: 16px;
+}
+.comment{
+    border-top: 1px solid var(--border-secondary);
+    margin-top: 8px;
+    display: flex;
+}
+.comment button{
+    color: var(--quartary);
+    cursor: pointer;
+    font-weight: 500;
 }
