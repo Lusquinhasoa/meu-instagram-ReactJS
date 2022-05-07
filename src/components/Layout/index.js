@@ -14,6 +14,7 @@ export function Layout(){
             <div className="box" style={{margin: '30px 0'}}>
                 <Post/>
             </div>
+            
             </div>
 
             <div style={{GridArea:'secondColumn'}}>
