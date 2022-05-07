@@ -43,8 +43,7 @@ export function Post(){
 
         <div className='legend'>
             <p>
-                <strong>John Cena</strong>  
-                  If you don´t watch my series, I am gonna ki*k your as* mother**
+                <strong>John Cena</strong> If you don´t watch my series, I am gonna ki*k your as* mother**
             </p>
 
             <div className='clock'>
