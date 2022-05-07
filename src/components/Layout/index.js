@@ -1,6 +1,7 @@
 import './style.css'
 import {Post} from '../Post'
 import {Story} from '../Story'
+import { Sugestões } from '../Sugestões'
 export function Layout(){
     return(
         <>
@@ -15,9 +16,11 @@ export function Layout(){
             </div>
             </div>
 
-            <div className="suggestion-box"style={{GridArea:'secondColumn'}}>
-                exemplo
+            <div style={{GridArea:'secondColumn'}}>
+            <div className="suggestion-box">
+               <Sugestões/>
             </div>
+        </div>
         </div>
         </>
     )

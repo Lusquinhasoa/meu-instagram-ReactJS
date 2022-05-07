@@ -1,0 +1,91 @@
+.header-suggestion{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header-suggestion img{
+    border-radius: 50%;
+    cursor: pointer;
+    height: 55px;
+    width: 55px;
+}
+.user-inf{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex: 1;
+}
+.user-inf .infos span{
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.user-inf .switch{
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--quartary);
+}
+.user-inf .infos p{
+    font-size: 13px;
+    color: var(--secondary);
+}
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 10px 0;
+}
+.header-main p{
+    font-size: 15px;
+    color: var(--secondary);
+    font-weight: 500;
+}
+.header-main span{
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.users{
+    margin-top: 5px;
+}
+.infosug img{
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+.infosug{
+    align-items: center;
+    margin: 15px 0 0 5px;
+    gap: 16px;
+    display: flex;
+}
+.infosu{
+    flex: 1;
+}
+.infosu span{
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.infosu p{
+    margin-top: 3px;
+    font-size: 13px;
+    color: var(--secondary);
+}
+.infosug .follow{
+    color: var(--quartary);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.footer-sug{
+    margin-top: 25px;
+    flex: 1;
+}
+.footer-sug p{
+    cursor: pointer;
+    color: var(--tertiary);
+    font-size: 12px;
+    margin-bottom: 15px;
+}

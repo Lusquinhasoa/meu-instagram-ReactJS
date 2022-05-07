@@ -11,5 +11,7 @@
     grid-gap: 50px;
 }
 .suggestion-box{
-    background: palevioletred;
+    position: fixed;
+    flex: 1;
+    max-width: 293px;
 }
