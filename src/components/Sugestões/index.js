@@ -2,10 +2,11 @@ import './style.css'
 
 export function Sugestões(){
     return(
-        <>
+        <div>
+        <div className='contain'>
             <div className="header-suggestion">
                 <img src="https://github.com/Lusquinhasoa.png"/>
-            </div>
+            
 
             <div className="user-inf">
                 <div className="infos">
@@ -14,7 +15,7 @@ export function Sugestões(){
                 </div>
                 <button className='switch'>Mudar</button>
             </div>
-
+        </div>
             <div className='header-main'>
                 <p>Sugestões para você</p>
                 <span>Ver tudo</span>
@@ -71,25 +72,7 @@ export function Sugestões(){
                     <button className='follow'>Seguir</button>
                 </div>
 
-                <div className='infosug'>
-                    <img src=''/>
-
-                    <div className='infosu'>
-                        <span>loll</span>
-                        <p>Seguido por Camila Cabello</p>
-                    </div>
-                    <button className='follow'>Seguir</button>
-                </div>
-
-                <div className='infosug'>
-                    <img src=''/>
-
-                    <div className='infosu'>
-                        <span>loll</span>
-                        <p>Seguido por Camila Cabello</p>
-                    </div>
-                    <button className='follow'>Seguir</button>
-                </div>
+                
                 
             </div>
 
@@ -98,6 +81,7 @@ export function Sugestões(){
 
                     <p>&copy; 2022 INSTAGRAM FROM META</p>
             </footer>
-        </>
+        </div>
+        </div>
     )
 }
