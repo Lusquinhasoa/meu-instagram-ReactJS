@@ -1,11 +1,33 @@
 import './style.css'
-
+import { useEffect, useState } from 'react'
 export function Sugestões(){
+
+    const [suggestions, setSuggestions] = useState([])
+
+    const [limitUsers, setLimitUsers] = useState(5)
+
+    const slice = suggestions.slice(0, limitUsers)
+
+    useEffect(() => {
+        fetch(`https://api.github.com/users/Lusquinhasoa/followers`)
+        .then((response) => {
+            return response.json()
+        })
+        .then((result) => {
+            setSuggestions(result)
+        })
+
+        .catch((err) => {
+            throw new Error(err)
+        })
+
+    }, [])
+
     return(
         <div>
         <div className='contain'>
             <div className="header-suggestion">
-                <img src="https://github.com/Lusquinhasoa.png"/>
+                <img src={"https://github.com/Lusquinhasoa.png"}/>
             
 
             <div className="user-inf">
@@ -22,57 +44,18 @@ export function Sugestões(){
             </div>
 
             <div className='users'>
-                <div className='infosug'>
-                    <img src=''/>
+                {slice.map((suggestion, key) => (
+                    <div className='infosug' key={key}>
+                    <img src={`https://github.com/${suggestion.login}.png`} />
 
                     <div className='infosu'>
-                        <span>loll</span>
+                        <span>{suggestion.login}</span>
                         <p>Seguido por Camila Cabello</p>
                     </div>
                     <button className='follow'>Seguir</button>
                 </div>
-
-                <div className='infosug'>
-                    <img src=''/>
-
-                    <div className='infosu'>
-                        <span>loll</span>
-                        <p>Seguido por Camila Cabello</p>
-                    </div>
-                    <button className='follow'>Seguir</button>
-                </div>
-
-                <div className='infosug'>
-                    <img src=''/>
-
-                    <div className='infosu'>
-                        <span>loll</span>
-                        <p>Seguido por Camila Cabello</p>
-                    </div>
-                    <button className='follow'>Seguir</button>
-                </div>
-
-                <div className='infosug'>
-                    <img src=''/>
-
-                    <div className='infosu'>
-                        <span>loll</span>
-                        <p>Seguido por Camila Cabello</p>
-                    </div>
-                    <button className='follow'>Seguir</button>
-                </div>
-
-                <div className='infosug'>
-                    <img src=''/>
-
-                    <div className='infosu'>
-                        <span>loll</span>
-                        <p>Seguido por Camila Cabello</p>
-                    </div>
-                    <button className='follow'>Seguir</button>
-                </div>
-
-                
+                ))}
+        
                 
             </div>
 
